@@ -1,0 +1,203 @@
+@charset "UTF-8";
+.main-visual-card {
+  background: #000;
+}
+
+.main-visual-card_body {
+  padding: 2% 0;
+}
+
+.main-visual-card_title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3%;
+}
+
+.main-visual-card_text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.shop-title {
+  width: 90%;
+  position: relative;
+  padding: 0 55px;
+  text-align: center;
+  margin: 5% 0;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-title {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.shop-title:before, .shop-title:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  border-top: solid 3px black;
+  border-bottom: solid 3px black;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-title:before, .shop-title:after {
+    width: 100px;
+  }
+}
+
+.shop-title:before {
+  left: 0;
+}
+
+.shop-title:after {
+  right: 0;
+}
+
+.shop-title_text {
+  font-size: .85rem;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+
+.ranking-card {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.ranking-card_imgframe img {
+  width: 100%;
+  height: auto;
+}
+
+.ranking-card_box {
+  background: #fff;
+  padding: 3%;
+}
+
+.ranking-card_subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 3px #333;
+}
+
+.ranking-card_title {
+  border-bottom: 5px solid #333;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 5% 0;
+  padding-bottom: 3%;
+}
+
+.ranking-card_text {
+  line-height: 1.2;
+  font-size: .85rem;
+  margin: 5% 0;
+}
+
+.ranking-card_btn {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  display: block;
+  width: 200px;
+  margin: 5% auto;
+  background: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.ranking-card_link {
+  display: block;
+  margin: 0 auto;
+}
+
+.ranking-card_link:hover {
+  text-decoration: none;
+  color: #333;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .ranking-card {
+    width: 100%;
+  }
+}
+
+.card-skin {
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.insta_btn {
+  /*ボタンの下地*/
+  color: #FFF;
+  /*文字・アイコン色*/
+  border-radius: 7px;
+  /*角丸に*/
+  position: relative;
+  display: block;
+  height: 50px;
+  /*高さ*/
+  width: 280px;
+  /*幅*/
+  text-align: center;
+  /*中身を中央寄せ*/
+  font-size: 25px;
+  /*文字のサイズ*/
+  line-height: 50px;
+  /*高さと合わせる*/
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  /*グラデーション①*/
+  overflow: hidden;
+  /*はみ出た部分を隠す*/
+  text-decoration: none;
+  /*下線は消す*/
+  margin: 3% auto;
+}
+
+.insta_btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*全体を覆う*/
+  height: 100%;
+  /*全体を覆う*/
+  background: linear-gradient(15deg, #ffdb2c, #f9764c 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.insta_btn span {
+  /*テキスト*/
+  display: inline-block;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.insta_btn:hover span {
+  /*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.insta_btn .fa-instagram {
+  /*アイコン*/
+  font-size: 35px;
+  /*アイコンサイズ*/
+  position: relative;
+  top: 4px;
+  /*アイコン位置の微調整*/
+}
+/*# sourceMappingURL=style.css.map */
